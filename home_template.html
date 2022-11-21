@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href='./public/css/styles.css' rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha384-GWpeQQCx59oy0AZxNeVcLrX+Nqpg3dhEoBT/ynclm8lAsrgtZfh/GqUAEuOG1gYA"
+        crossorigin="anonymous"></script>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     <script src="./public/js/coffeCupInt.js"></script>
     <script src="./public/js/coffee-cup-animate-sm.js"></script>
@@ -16,15 +20,16 @@
 
 <body onload="init();">
     <header class="container-fluid p-0 d-flex flex-wrap justify-content-between align-items-end">
-        <div class="col-5 d-flex row align-items-end justify-content-start bg-secondary header-name">
+        <div class="col-5 d-flex row align-items-end justify-content-start header-name">
             <img class='img-fluid rounded-circle col-3 position-relative mt-2 ms-4 mb-2'
                 src="./public/images/mark with coffee.jpg">
-            
+
             <h1 class='col-8 m-0 p-0 pb-1 position-relative'>Mark Gardner</h1>
         </div>
 
-        <div id="animation_container" class="col-2" >
-            <canvas id="canvas" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+        <div id="animation_container" class="col-2">
+            <canvas id="canvas"
+                style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
             <div id="dom_overlay_container">
             </div>
         </div>
@@ -33,71 +38,101 @@
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
                     <li class="nav-item">
-                        <a class="nav-link active ms-3 me-1 fs-4" aria-current="page" href="#">About Me</a>
+                        <a class="nav-link  ms-3 me-1 fs-4" aria-current="page" href="#">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-3 me-1 fs-4" aria-current="page" href="#">Portfolio</a>
+                        <a class="nav-link  ms-3 me-1 fs-4" aria-current="page" href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-3 me-1 fs-4" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link  ms-3 me-1 fs-4" aria-current="page" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="row container-fluid pretend-border"></div>
-
+        <div class="row container-fluid tagRow">
+            <div class="tagContainer d-flex justify-content-end p-0">
+                <h3 class="forgeBy align-self-start ">Forged by geekdom</h3>
+                <h3 class="fuelBy d-block align-self-end">Fueled by coffee.</h3>
+            </div>
+        </div>
     </header>
     <main>
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <section class="aboutMe col-2">
+                    <h2 class="col-12 mb-2">About me</h2>
+                    <p>I'm a creative full-stack developer and multi-hyphenate who loves learning and creating new
+                        things. Conquering good and meaningful challenges is one of my favorite things to do. That and
+                        hanging out with my wife and son on our down time. </p>
+                    <p>When it comes to my work, I believe that the experience a person has while using technology
+                        should be easy, enjoyable, and memorable. The best measure of success is making people feel a
+                        connection. I take that philosophy in all of my work, from development to film.</p>
+                    <p>Thanks for stopping by and please reach out if you want to say hello.</p>
+                </section>
 
+                <section class="projects col-9 d-flex flex-wrap justify-content-around">
+                    <h2 class="col-12 mb-2">Projects</h2>
+                    <article class="projectFeat garden2 mb-5 d-flex flex-wrap">
+                        <div class="projectFeatTitle col-5 p-2">
+                            <h4>Garden<sup>2</sup></h4>
+                            <p>An app to help you plan and maintain your garden.</p>
+                        </div>
+                        <div class='projectTech d-flex align-items-center ms-auto mt-auto'>
+                            <i class="devicon-devicon-plain"></i>
+                        </div>
+
+                    </article>
+                    <article class="projectFeat playdate mb-5">
+                        <div class="projectFeatTitle col-5 p-2">
+                            <h4>PlayDate</h4>
+                            <p>An app to help busy parents keep their kids entertained.</p>
+                        </div>
+
+                    </article>
+                    <article class="projectFeat git mb-5">
+                        <div class="projectFeatTitle col-5 p-2">
+                            <h4>GitHub<sup>2</sup></h4>
+                            <p>My journey as a developer.</p>
+                        </div>
+
+                    </article>
+                    <article class="projectFeat tds mb-5">
+                        <div class="projectFeatTitle col-5 p-2">
+                            <h4>TDS</h4>
+                            <p>Food, drinks, and lifestyle.</p>
+                        </div>
+
+                    </article>
+                    <article class="projectFeat constell mb-5">
+                        <div class="projectFeatTitle col-5 p-2">
+                            <h4>Constellation<sup>2</sup></h4>
+                            <p>Star Trek Adventures</p>
+                        </div>
+
+                    </article>
+                    <article class="projectFeat hoa mb-5">
+                        <div class="projectFeatTitle col-5 p-2">
+                            <h4>Heroes of Awesome</h4>
+                            <p>Dungeons and Dragons for everyone.</p>
+                        </div>
+
+                    </article>
+
+
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
 
     </footer>
-    <!-- <script>
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-        function init() {
-            canvas = document.getElementById("canvas");
-            anim_container = document.getElementById("animation_container");
-            dom_overlay_container = document.getElementById("dom_overlay_container");
-            var comp=AdobeAn.getComposition("F15B08081EC66A4580C4FA61AB570BE6");
-            var lib=comp.getLibrary();
-            var loader = new createjs.LoadQueue(false);
-            loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
-            loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
-            var lib=comp.getLibrary();
-            loader.loadManifest(lib.properties.manifest);
-        }
-        function handleFileLoad(evt, comp) {
-            var images=comp.getImages();	
-            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
-        }
-        function handleComplete(evt,comp) {
-            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-            var lib=comp.getLibrary();
-            var ss=comp.getSpriteSheet();
-            var queue = evt.target;
-            var ssMetadata = lib.ssMetadata;
-            for(i=0; i<ssMetadata.length; i++) {
-                ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
-            }
-            exportRoot = new lib.coffeecupanimation();
-            stage = new lib.Stage(canvas);	
-            //Registers the "tick" event listener.
-            fnStartAnimation = function() {
-                stage.addChild(exportRoot);
-                createjs.Ticker.framerate = lib.properties.fps;
-                createjs.Ticker.addEventListener("tick", stage);
-            }	    
-            //Code to support hidpi screens and responsive scaling.
-            AdobeAn.makeResponsive(true,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
-            AdobeAn.compositionLoaded(lib.properties.id);
-            fnStartAnimation();
-        }
-        </script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    
+    <script src="./public/js/homeGS.js"></script>
+
 </body>
 
 </html>
