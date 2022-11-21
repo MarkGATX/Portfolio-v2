@@ -1,0 +1,35 @@
+/* variables */
+:root {
+    --dark: #764832;
+    --light: #E6FAFC;
+    --accent: #36558f;
+}
+
+/* global */
+body {
+    color:var(--accent);
+}
+
+header h1{
+    color:var(--light);
+}
+
+/* classes */
+.header-name {
+    background-image: linear-gradient(180deg, #FFF 30%, var(--dark) 30%, var(--dark) 70%)
+}
+
+.nav-item {
+    color:var(--dark);
+}
+
+.pretend-border {
+    background-image: radial-gradient(at 70% top, var(--dark) 1%, #fff 30%);
+    height:.3rem;
+}
+
+/* ids */
+
+#animation_container {
+    padding-left:10rem;
+}
