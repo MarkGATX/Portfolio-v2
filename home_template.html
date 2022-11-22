@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -37,14 +44,14 @@
         <nav class="navbar expand-lg col-4 d-flex align-items-end">
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link  ms-3 me-1 fs-4" aria-current="page" href="#">About Me</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link  ms-3 me-1 fs-4" aria-current="page" target="_blank" href="https://github.com/markgatx">My GitHub</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  ms-3 me-1 fs-4" aria-current="page" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  ms-3 me-1 fs-4" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link  ms-3 me-1 fs-4" aria-current="page" href="#contactJump">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -61,77 +68,179 @@
         <div class="container-fluid">
             <div class="row justify-content-around">
                 <section class="aboutMe col-2">
-                    <h2 class="col-12 mb-2">About me</h2>
-                    <p>I'm a creative full-stack developer and multi-hyphenate who loves learning and creating new
-                        things. Conquering good and meaningful challenges is one of my favorite things to do. That and
-                        hanging out with my wife and son on our down time. </p>
-                    <p>When it comes to my work, I believe that the experience a person has while using technology
-                        should be easy, enjoyable, and memorable. The best measure of success is making people feel a
-                        connection. I take that philosophy in all of my work, from development to film.</p>
+                    <h2 class="col-12 mb-4">About me</h2>
+                    <p>I'm a creative full-stack developer and multi-hyphenate who loves learning and creating new things. </p>
+                    <p>The experience a person has while using technology should be easy, enjoyable, and sometimes even surprising. I use that philosophy in all of my work,  from development to film.</p>
                     <p>Thanks for stopping by and please reach out if you want to say hello.</p>
                 </section>
 
-                <section class="projects col-9 d-flex flex-wrap justify-content-around">
-                    <h2 class="col-12 mb-2">Projects</h2>
-                    <article class="projectFeat garden2 mb-5 d-flex flex-wrap">
-                        <div class="projectFeatTitle col-5 p-2">
-                            <h4>Garden<sup>2</sup></h4>
-                            <p>An app to help you plan and maintain your garden.</p>
-                        </div>
-                        <div class='projectTech d-flex align-items-center ms-auto mt-auto'>
-                            <i class="devicon-devicon-plain"></i>
-                        </div>
+                <!-- <section class="col-9 d-flex flex-wrap justify-content-around pb-4"> -->
+                <section class="col-9 projects">
+                    <h2 class="col-12 mb-4 sticky-top projectHeadBG">Projects</h2>
+                    <div class=" col-12 d-flex flex-wrap justify-content-around pb-4">
+                        <article class="projectFeat garden2 mb-5 d-flex flex-wrap" data-link="garden2">
+                            <div class="projectFeatTitle col-5 p-2">
+                                <h4>Garden<sup>2</sup></h4>
+                                <p>An app to help you plan and maintain your garden.</p>
+                            </div>
+                            <div class='projectTech d-flex justify-content-center align-items-center ms-auto mt-auto'>
+                                <i title="Sequelize" class="devicon-sequelize-plain"></i>
+                                <i title="Bootstrap" class="devicon-bootstrap-plain"></i>
+                                <i title="Handlebars" class="devicon-handlebars-plain"></i>
+                                <i title="Heroku" class="devicon-heroku-plain"></i>
+                                <i title="jquery" class="devicon-jquery-plain"></i>
+                                <i title="photoshop" class="devicon-photoshop-plain"></i>
+                                <i title="vscode" class="devicon-vscode-plain"></i>
+                            </div>
 
-                    </article>
-                    <article class="projectFeat playdate mb-5">
-                        <div class="projectFeatTitle col-5 p-2">
-                            <h4>PlayDate</h4>
-                            <p>An app to help busy parents keep their kids entertained.</p>
-                        </div>
+                        </article>
+                        <article class="projectFeat weatherDash mb-5 d-flex flex-wrap " data-link="weatherDash">
+                            <div class="projectFeatTitle col-5 p-2">
+                                <h4>Weather Dashboard</h4>
+                                <p>A simple app to give you weather forecasts for... anywhere.</p>
+                            </div>
+                            <div class='projectTech d-flex justify-content-center align-items-center ms-auto mt-auto'>
+                                <i title="Bootstrap" class="devicon-bootstrap-plain"></i>
+                                <i title="jquery" class="devicon-jquery-plain"></i>
+                                <i title="CSS3" class="devicon-css3-plain"></i>
+                                <i title="vscode" class="devicon-vscode-plain"></i>
+                            </div>
 
-                    </article>
-                    <article class="projectFeat git mb-5">
-                        <div class="projectFeatTitle col-5 p-2">
-                            <h4>GitHub<sup>2</sup></h4>
-                            <p>My journey as a developer.</p>
-                        </div>
+                        </article>
+                        <article class="projectFeat scribl mb-5 d-flex flex-wrap" data-link="scribl">
+                            <div class="projectFeatTitle col-5 p-2">
+                                <h4>Scribl Notes</h4>
+                                <p>A full-stack CMS platform.</p>
+                            </div>
+                            <div class='projectTech d-flex justify-content-center align-items-center ms-auto mt-auto'>
+                                <i title="Sequelize" class="devicon-sequelize-plain"></i>
+                                <i title="Bootstrap" class="devicon-bootstrap-plain"></i>
+                                <i title="Handlebars" class="devicon-handlebars-plain"></i>
+                                <i title="Express" class="devicon-express-original"></i>
+                                <i title="vscode" class="devicon-vscode-plain"></i>
+                            </div>
 
-                    </article>
-                    <article class="projectFeat tds mb-5">
-                        <div class="projectFeatTitle col-5 p-2">
-                            <h4>TDS</h4>
-                            <p>Food, drinks, and lifestyle.</p>
-                        </div>
+                        </article>
+                        <article class="projectFeat wordguess mb-5 d-flex flex-wrap" data-link="wordguess">
+                            <div class="projectFeatTitle col-5 p-2">
+                                <h4>Word Guess Game</h4>
+                                <p>A simple wordguess game.</p>
+                            </div>
+                            <div class='projectTech d-flex justify-content-center align-items-center ms-auto mt-auto'>
+                                <i title="bootstrap" class="devicon-bootstrap-plain"></i>
+                                <i title="vscode" class="devicon-vscode-plain"></i>
+                            </div>
 
-                    </article>
-                    <article class="projectFeat constell mb-5">
-                        <div class="projectFeatTitle col-5 p-2">
-                            <h4>Constellation<sup>2</sup></h4>
-                            <p>Star Trek Adventures</p>
-                        </div>
+                        </article>
+                        <article class="projectFeat playdate mb-5 d-flex flex-wrap" data-link="playdate">
+                            <div class="projectFeatTitle col-5 p-2">
+                                <h4>PlayDate</h4>
+                                <p>An app to help busy parents keep their kids entertained.</p>
+                            </div>
+                            <div class='projectTech d-flex justify-content-center align-items-center ms-auto mt-auto'>
+                                <img class="icon blue" src="./public/images/materialize.svg">
+                                <i title="jquery" class="devicon-jquery-plain"></i>
+                                <i title="vscode" class="devicon-vscode-plain"></i>
+                            </div>
 
-                    </article>
-                    <article class="projectFeat hoa mb-5">
-                        <div class="projectFeatTitle col-5 p-2">
-                            <h4>Heroes of Awesome</h4>
-                            <p>Dungeons and Dragons for everyone.</p>
-                        </div>
+                        </article>
+                        <article class="projectFeat constell mb-5 d-flex flex-wrap" data-link="constell">
+                            <div class="projectFeatTitle col-5 p-2">
+                                <h4>Constellation</h4>
+                                <p>Star Trek Adventures</p>
+                            </div>
+                            <div class='projectTech d-flex justify-content-center align-items-center ms-auto mt-auto'>
+                                <i title="Blender" class="devicon-blender-original"></i>
+                                <i title="Photoshop" class="devicon-photoshop-plain"></i>
+                                <i title="Premiere Pro" class="devicon-premierepro-plain"></i>
+                                <i title="After Effects" class="devicon-aftereffects-plain"></i>
+                            </div>
 
-                    </article>
+                        </article>
+                        <article class="projectFeat tds mb-5 d-flex flex-wrap" data-link="tds">
+                            <div class="projectFeatTitle col-5 p-2">
+                                <h4>TDS</h4>
+                                <p>Food, drinks, and lifestyle.</p>
+                            </div>
+                            <div class='projectTech d-flex justify-content-center align-items-center ms-auto mt-auto'>
+                                <i title="Wordpress" class="devicon-wordpress-plain"></i>
+                                <i title="Photoshop" class="devicon-photoshop-plain"></i>
+                                <i title="Premiere Pro" class="devicon-premierepro-plain"></i>
+                            </div>
 
+                        </article>
+
+                        <article class="projectFeat hoa mb-5 d-flex flex-wrap" data-link="hoa">
+                            <div class="projectFeatTitle col-5 p-2">
+                                <h4>Heroes of Awesome</h4>
+                                <p>Dungeons and Dragons for everyone.</p>
+                            </div>
+                            <div class='projectTech d-flex justify-content-center align-items-center ms-auto mt-auto'>
+                                <i title="Photoshop" class="devicon-photoshop-plain"></i>
+                                <i title="Premiere Pro" class="devicon-premierepro-plain"></i>
+                                <i title="After Effects" class="devicon-aftereffects-plain"></i>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <div class="container-fluid row mt-5">
+
+                <section id="contactDiv" class=" container d-flex justify-content-center flex-wrap p-5">
+                    <a id="contactJump"></a>
+                    <h2 class="col-12 text-center">Contact me!</h2>
+                    <p class="col-12 text-center">You can reach me on GitHub or LinkedIn</p>
+                    <a class="col-2 d-flex justify-content-center" href="https://github.com/markgatx"><i title="GitHub"
+                            class="devicon-github-original "></i></a>
+                    <a class="col-2 d-flex justify-content-center"
+                        href="https://www.linkedin.com/in/mark-gardner-2b214817/"><i title="LinkedIn"
+                            class="devicon-linkedin-plain "></i></a>
 
                 </section>
             </div>
+            <div class="container-fluid row d-flex justify-content-center mt-2">
+                <div class="card col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Or send me an email...</h5>
+                        <label for="Email" class="form-label">Your Email address</label>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Don't worry. I'll never share your email with anyone else.
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message" class="form-label">Your message here:</label>
+                            <input type="textarea" class="form-control" id="message">
+                          </div>
+                        <button type="submit" class="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="container-fluid d-flex mt-5 p-3 justify-content-between">
+        <div class="col-6 d-flex align-items-center flex-wrap">
+            <p class="col-12">This site created with </p>
+            <div class="col-12 d-flex ">
+                <p class="d-flex flex-row col-12">
+                    <i title="bootstrap" class="devicon-bootstrap-plain d-block "></i>
+                    <i title="CSS3" class="devicon-css3-plain d-block "></i>
+                    <img title="Greensock" class="icon " src="./public/images/gsap-greensock.svg"></i>
+                </p>
+            </div>
+        </div>
+        <div class="col-6 text-end">Copyright 2022 - Mark Gardner</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="./public/js/homeGS.js"></script>
+    <script src="./public/js/scripts.js"></script>
 
 </body>
 

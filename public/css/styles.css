@@ -7,18 +7,37 @@
 
 /* global */
 
+a {
+    text-decoration:none;
+}
+
+a i {
+    color:var(--accent);
+}
+
 html {
     background-color: var(--light);
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Kanit', sans-serif;
+}
+
 h2 {
     color: var(--dark);
-    
 }
+
 
 body {
     color:var(--accent);
     background-color: var(--light);
+    font-family: 'Inter', sans-serif;
+
+}
+
+footer {
+    background-color:var(--dark);
+    color:var(--light);
 }
 
 header h1{
@@ -26,10 +45,22 @@ header h1{
 }
 
 i {
-    font-size:3rem;
+    font-size:2vw;
+    margin:2px 2px;
 }
 
 /* classes */
+
+.blue {
+    filter: brightness(0) saturate(100%) invert(32%) sepia(7%) saturate(6942%) hue-rotate(187deg) brightness(83%) contrast(79%);
+}
+
+.button {
+    color:var(--light);
+    background-Color:var(--dark);
+    border:0;
+    padding:10px;
+}
 
 .fuelBy, .forgeBy {
     padding:.5rem;
@@ -42,8 +73,12 @@ i {
     top:-11px;
 }
 
+.icon {
+    width:2vw;
+}
+
 .header-name {
-    background-image: linear-gradient(180deg, var(--light) 30%, var(--dark) 30%, var(--dark) 70%)
+    background-image: linear-gradient(180deg, var(--light) 30%, var(--dark) 30%, var(--dark) 70%);
 }
 
 .nav-link {
@@ -61,6 +96,12 @@ i {
 
 .projects {
     border-left: solid 2px var(--accent);
+    height:70vh;
+    overflow:auto;
+}
+
+.projectHeadBG {
+    background-color:var(--light);
 }
 
 .projectFeat {
@@ -85,6 +126,11 @@ i {
     height:10rem;
 }
 
+.projectFeatTitle p:nth-child(2) {
+    font-style:italic;
+    font-size:.8rem;
+}
+
 .projectTech {
     position: relative;
     bottom: -2rem;
@@ -99,6 +145,7 @@ i {
 
 .projectFeat:hover .projectTech{
     transform:rotateX(0deg);
+    box-shadow:10px 10px 20px var(--dark);
 }
 
 .tagContainer {
@@ -137,13 +184,31 @@ i {
 }
 
 .garden2 {
-    background-image: url(../images/plant\ placeholder.webp),linear-gradient(0deg, white 33%, black 66%), url(../images/plant\ placeholder.webp);
+    background-image: url(../images/garden2_bg.jpg),linear-gradient(0deg, white 33%, black 66%), url(../images/garden2_bg.jpg);
  
 }
+
+.scribl {
+    background-image: url(../images/scrible_notes_bg.jpg),linear-gradient(0deg, white 33%, black 66%), url(../images/scrible_notes_bg.jpg);
+ 
+}
+
+.weatherDash {
+    background-image: url(../images/weather_dash_bg.jpg),linear-gradient(0deg, white 33%, black 66%), url(../images/weather_dash_bg.jpg);
+ 
+}
+
+.wordguess {
+    background-image: url(../images/word_guess_bg.jpg),linear-gradient(0deg, white 33%, black 66%), url(../images/word_guess_bg.jpg);
+ 
+}
+
 .projectFeat:hover {
     border-color:var(--accent);
-    background-position: center, 0% 70%, center;
+    background-position: center, 0% 100%, center;
     border-color:var(--accent);
+    box-shadow:10px 10px 20px var(--dark);
+    scale:104%;
 }
 
 .projectFeat:hover .projectFeatTitle{
@@ -154,4 +219,10 @@ i {
 
 #animation_container {
     padding-left:10rem;
+    width:280px !important;
+}
+
+#contactDiv {
+    border-top: solid 2px var(--accent);
+
 }
