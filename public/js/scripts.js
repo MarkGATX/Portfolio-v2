@@ -21,7 +21,8 @@ const aboutMe = [
     ["Favorite Sport?", "Volleyball"],
     ["Second Favorite Sport?", "Soccer"],
     ["Cake or pie?", "Quit trying to make me choose!"],
-    ["Favorite Fruit?", "Strawberries"]
+    ["Favorite Fruit?", "Strawberries"],
+    ["Favorite Board Games", "Powergrid, Brass, Dune:Imperium, Underwater Cities"]
 ]
 
 const questNum = Math.floor(Math.random() * aboutMe.length+1);
@@ -63,6 +64,9 @@ const linkTarget = function (event) {
             break;
         case 'wg':
             window.open("https://youtu.be/MRzQGe8m_4A");
+            break;
+            case 'csssnips':
+            window.open("https://markgatx.github.io/CSS-Cheat-Sheet/");
             break;
         default:
             break;

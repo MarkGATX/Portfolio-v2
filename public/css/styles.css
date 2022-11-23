@@ -155,9 +155,13 @@ i {
 }
 
 /* classes for project background */
+.csssnips {
+    background-image: url(../images/css_snippet_bg.jpg),linear-gradient(0deg, white 33%, black 66%),url(../images/css_snippet_bg.jpg);
+}
+
+
 .constell {
     background-image: url(../images/constellation\ background.jpg),linear-gradient(0deg, white 33%, black 66%),url(../images/constellation\ background.jpg);
-
 }
 
 .git {
