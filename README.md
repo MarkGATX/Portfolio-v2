@@ -31,6 +31,7 @@ The "About Me" section gives a quick glimpse into who I am and the philosophy I 
 "My Projects," appropriately enough, showcases my projects. It's a combination of personal projects I've done by myself and other development projects I've worked on with other people. There are even some of the projects I've completed in the digital media space. 
 
 When you hover over a project, the project will switch to full color and a box will open at the bottom right. That shows different technologies that were used to create that project. If you're not sure what an icon represents, you can hover over it with your mouse and the name will pop up as a tool-tip.
+
 ![Portfolio detail of techs used on project](./public/images/portfolio_techs.jpg)
 
 Once you click on the project you'll be taken to the live site where you can see it in action.
