@@ -1,5 +1,10 @@
 const quest = document.getElementById('question');
 const ans = document.getElementById('answer');
+const pathModal = new bootstrap.Modal(document.getElementById('pathModal'))
+const livePath = document.querySelector("#pathModal a.livePath");
+const gitPath = document.querySelector("#pathModal a.gitPath");
+console.log(livePath)
+console.log(gitPath)
 
 
 const aboutMe = [
@@ -39,19 +44,34 @@ const linkTarget = function (event) {
     console.log(link)
     switch (link) {
         case 'garden2':
-            window.open("https://garden2ed.herokuapp.com/");
+            livePath.setAttribute('href', 'https://garden2ed.herokuapp.com/')
+            gitPath.setAttribute('href', 'https://github.com/MarkGATX/Garden2')
+            pathModal.show();
             break;
         case 'weatherDash':
-            window.open("https://markgatx.github.io/Weather-Dashboard-Full-Stack-Bootcamp/");
+            livePath.setAttribute('href', 'https://markgatx.github.io/Weather-Dashboard-Full-Stack-Bootcamp/')
+            gitPath.setAttribute('href', 'https://github.com/MarkGATX/Weather-Dashboard-Full-Stack-Bootcamp')
+            pathModal.show();
             break;
         case 'scribl':
-            window.open("https://scribl-notes.herokuapp.com/");
+            livePath.setAttribute('href', 'https://scribl-notes.herokuapp.com/')
+            gitPath.setAttribute('href', 'https://github.com/MarkGATX/Scrible_Notes_CMS')
+            pathModal.show();
             break;
         case 'wordguess':
-            window.open("https://markgatx.github.io/The-Word-Guess-Game/");
+            livePath.setAttribute('href', 'https://markgatx.github.io/The-Word-Guess-Game/')
+            gitPath.setAttribute('href', 'https://github.com/MarkGATX/The-Word-Guess-Game')
+            pathModal.show();
+            break;
+        case 'codeQuiz':
+            livePath.setAttribute('href', 'https://markgatx.github.io/The-Coding-Quiz-Challenge/')
+            gitPath.setAttribute('href', 'https://github.com/MarkGATX/The-Coding-Quiz-Challenge')
+            pathModal.show();
             break;
         case 'playdate':
-            window.open("https://markgatx.github.io/Playdate-The-App-for-Exhausted-Parents/");
+            livePath.setAttribute('href', 'https://markgatx.github.io/Playdate-The-App-for-Exhausted-Parents/')
+            gitPath.setAttribute('href', 'https://github.com/MarkGATX/Playdate-The-App-for-Exhausted-Parents')
+            pathModal.show();
             break;
         case 'constell':
             window.open("https://www.youtube.com/playlist?list=PLtk51oTcFVK-t97eTz0cJXYqTu9zrxZx7");
