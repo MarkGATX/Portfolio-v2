@@ -95,12 +95,18 @@ i {
 .livePath:hover div, .gitPath:hover div{
     scale:1.2;
     border:5px solid var(--accent);
-    margin-left:3.4em;
+    margin-left:2.4em;
+    box-shadow:5px 5px 10px var(--dark);
     
 }
 
 .modal-body a{
     color:var(--accent);
+    
+}
+
+.modal-body {
+    background-color: var(--light);
 }
 
 .modal-header {
