@@ -97,7 +97,7 @@ i {
 
 .projects {
     border-left: solid 2px var(--accent);
-    height:70vh;
+    height:1100px;
     overflow:auto;
 }
 
