@@ -50,6 +50,10 @@ i {
     margin:2px 2px;
 }
 
+img, svg {
+    vertical-align: baseline;
+}
+
 /* classes */
 /* tints colored icons black and then adjusts to blue to match blue on site */
 .blue {
