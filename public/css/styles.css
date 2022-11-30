@@ -178,7 +178,7 @@ img, svg {
     background-color: var(--light);
     border: 5px solid var(--accent);
     height: 5rem;
-    transition:all 1s;
+    transition: all .5s cubic-bezier(.8,.05,.91,.68);
     transform:rotateX(90deg);
 }
 
